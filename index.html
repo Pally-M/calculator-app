@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="number" id="num1" placeholder="Number 1">
+        <input type="number" id="num2" placeholder="Number 2">
+        <div class="radio-containor">
+            <label><input type="radio" name="operation" value="add">Add</label>
+            <label><input type="radio" name="operation" value="subtract">Subtract</label>
+            <label><input type="radio" name="operation" value="multiply">Multiply</label>
+            <label><input type="radio" name="operation" value="divide">Divide</label>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+        <div id="result"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
